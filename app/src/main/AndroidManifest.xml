@@ -24,6 +24,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ItemListActivity" />
         </activity>
+        <provider
+            android:name="contentprovider.WeatherContentProvider"
+            android:authorities="ru.ifmo.md.lesson8.contentprovider" >
+            </provider>
     </application>
 
 </manifest>
