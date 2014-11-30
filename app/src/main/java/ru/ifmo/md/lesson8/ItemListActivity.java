@@ -1,8 +1,13 @@
 package ru.ifmo.md.lesson8;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.os.Debug;
 import android.support.v4.app.FragmentActivity;
+import android.telephony.TelephonyManager;
+import android.util.DisplayMetrics;
 
 
 /**
@@ -34,8 +39,10 @@ public class ItemListActivity extends FragmentActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_list);
+        //Debug.waitForDebugger();
 
-        if (findViewById(R.id.item_detail_container) != null) {
+        if (isTablet(this)) {
+        //if (findViewById(R.id.item_detail_container) != null) {
             // The detail container view will be present only in the
             // large-screen layouts (res/values-large and
             // res/values-sw600dp). If this view is present, then the
@@ -77,5 +84,9 @@ public class ItemListActivity extends FragmentActivity
             detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, id);
             startActivity(detailIntent);
         }
+    }
+
+    public static boolean isTablet(Context context) {
+        return (context.getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK) >= Configuration.SCREENLAYOUT_SIZE_LARGE;
     }
 }

@@ -15,6 +15,7 @@ import java.util.HashSet;
 
 import ru.ifmo.md.lesson8.database.WeatherDatabaseHelper;
 import ru.ifmo.md.lesson8.database.WeatherTable;
+import ru.ifmo.md.lesson8.weather.Weather;
 
 /**
  * Created by default on 29.11.14.
@@ -177,8 +178,9 @@ public class WeatherContentProvider extends ContentProvider{
     }
 
     private void checkColumns(String[] projection) {
-        String[] available = { WeatherTable.COLUMN_WEATHER,
-                WeatherTable.COLUMN_CITY, WeatherTable.COLUMN_ID };
+        String[] available = { WeatherTable.COLUMN_LONGFORECAST,
+                WeatherTable.COLUMN_CURRENT, WeatherTable.COLUMN_ID,
+                WeatherTable.COLUMN_IS_SELECTED, WeatherTable.COLUMN_NAME};
         if (projection != null) {
             HashSet<String> requestedColumns = new HashSet<String>(Arrays.asList(projection));
             HashSet<String> availableColumns = new HashSet<String>(Arrays.asList(available));

@@ -1,9 +1,13 @@
 package ru.ifmo.md.lesson8.dummy;
 
+import java.sql.Time;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import ru.ifmo.md.lesson8.weather.CurrentWeather;
+import ru.ifmo.md.lesson8.weather.WeatherForecast;
 
 /**
  * Helper class for providing sample content for user interfaces created by
@@ -25,9 +29,13 @@ public class DummyContent {
 
     static {
         // Add 3 sample items.
-        addItem(new DummyItem("1", "Item 1"));
-        addItem(new DummyItem("2", "Item 2"));
-        addItem(new DummyItem("3", "Item 3"));
+        byte[] a = {0,0,0,0};
+        addItem(new DummyItem("1", new CurrentWeather(new Time(1123009900909L), new Time(1243243253L),0,0,0,0,0,0,0,0,"Moscow",a),
+                new WeatherForecast()));
+        addItem(new DummyItem("2", new CurrentWeather(new Time(1123009900909L), new Time(1243243253L),0,0,0,0,0,0,0,0,"St.Petersburg",a),
+                new WeatherForecast()));
+        addItem(new DummyItem("3", new CurrentWeather(new Time(1123009900909L), new Time(1243243253L),0,0,0,0,0,0,0,0,"Beijing",a),
+                new WeatherForecast()));
     }
 
     private static void addItem(DummyItem item) {
@@ -40,16 +48,19 @@ public class DummyContent {
      */
     public static class DummyItem {
         public String id;
-        public String content;
+        public CurrentWeather currentWeather;
+        public WeatherForecast forecast;
 
-        public DummyItem(String id, String content) {
+
+        public DummyItem(String id, CurrentWeather currentWeather, WeatherForecast weatherForecast) {
             this.id = id;
-            this.content = content;
+            this.currentWeather = currentWeather;
+            this.forecast = weatherForecast;
         }
 
         @Override
         public String toString() {
-            return content;
+            return this.currentWeather.getName();
         }
     }
 }

@@ -25,7 +25,7 @@
                 android:value=".ItemListActivity" />
         </activity>
         <provider
-            android:name="contentprovider.WeatherContentProvider"
+            android:name="ru.ifmo.md.lesson8.contentprovider.WeatherContentProvider"
             android:authorities="ru.ifmo.md.lesson8.contentprovider" >
             </provider>
     </application>

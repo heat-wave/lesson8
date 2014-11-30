@@ -4,4 +4,85 @@
     <string name="app_name">Weather</string>
     <string name="title_item_detail">Item Detail</string>
 
+    <string name="id200">thunderstorm with light rain</string>
+    <string name="id201">thunderstorm with rain</string>
+    <string name="id202">thunderstorm with heavy rain</string>
+    <string name="id210">light thunderstorm</string>
+    <string name="id211">thunderstorm</string>
+    <string name="id212">heavy thunderstorm</string>
+    <string name="id221">ragged thunderstorm</string>
+    <string name="id230">thunderstorm with light drizzle</string>
+    <string name="id231">thunderstorm with drizzle</string>
+    <string name="id232">thunderstorm with heavy drizzle</string>
+
+    <string name="id300">light intensity drizzle</string>
+    <string name="id301">drizzle</string>
+    <string name="id302">heavy intensity drizzle</string>
+    <string name="id310">light intensity drizzle rain</string>
+    <string name="id311">drizzle rain</string>
+    <string name="id312">heavy intensity drizzle rain</string>
+    <string name="id313">shower rain and drizzle</string>
+    <string name="id314">heavy shower rain and drizzle</string>
+    <string name="id321">shower drizzle</string>
+
+    <string name="id500">light rain</string>
+    <string name="id501">moderate rain</string>
+    <string name="id502">heavy intensity rain</string>
+    <string name="id503">very heavy rain</string>
+    <string name="id504">extreme rain</string>
+    <string name="id511">freezing rain</string>
+    <string name="id520">light intensity shower rain</string>
+    <string name="id521">shower rain</string>
+    <string name="id522">heavy intensity shower rain</string>
+    <string name="id531">ragged shower rain</string>
+
+    <string name="id600">light snow</string>
+    <string name="id601">snow</string>
+    <string name="id602">heavy snow</string>
+    <string name="id611">sleet</string>
+    <string name="id612">shower sleet</string>
+    <string name="id615">light rain and snow</string>
+    <string name="id616">rain and snow</string>
+    <string name="id620">light shower snow</string>
+    <string name="id621">shower snow</string>
+    <string name="id622">heavy shower snow</string>
+
+    <string name="id701">mist</string>
+    <string name="id711">smoke</string>
+    <string name="id721">haze</string>
+    <string name="id731">sand, dust whirls</string>
+    <string name="id741">fog</string>
+    <string name="id751">sand</string>
+    <string name="id761">dust</string>
+    <string name="id762">volcanic ash</string>
+    <string name="id771">squalls</string>
+    <string name="id781">tornado</string>
+
+    <string name="id800">clear sky</string>
+    <string name="id801">few clouds</string>
+    <string name="id802">scattered clouds</string>
+    <string name="id803">broken clouds</string>
+    <string name="id804">overcast clouds</string>
+
+    <string name="id900">tornado</string>
+    <string name="id901">tropical storm</string>
+    <string name="id902">hurricane</string>
+    <string name="id903">cold</string>
+    <string name="id904">hot</string>
+    <string name="id905">windy</string>
+    <string name="id906">hail</string>
+    <string name="id951">calm</string>
+    <string name="id952">light breeze</string>
+    <string name="id953">gentle breeze</string>
+    <string name="id954">moderate breeze</string>
+    <string name="id955">fresh breeze</string>
+    <string name="id956">strong breeze</string>
+    <string name="id957">high wind, near gale</string>
+    <string name="id958">gale</string>
+    <string name="id959">severe gale</string>
+    <string name="id960">storm</string>
+    <string name="id961">violent storm</string>
+    <string name="id962">hurricane</string>
+
+
 </resources>
